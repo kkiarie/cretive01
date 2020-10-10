@@ -16,14 +16,9 @@
   - form{"name":"form_contact"}
   - form{"name":null}
   - utter_slot_values  
-  - utter_noworries    
-
-
-
+  - utter_noworries
 
 ## api path
 
 * demo_1
   - action_selektor
-
-
