@@ -23,7 +23,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
   - name: DucklingHTTPExtractor
-    url: "http://localhost:8000"
+    url: "http://duckling:8000"
     locale: "en"
     timezone: "Africa/Nairobi"
     dimensions: ["time","email","phone-number"]

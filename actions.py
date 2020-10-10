@@ -35,7 +35,6 @@ class FormContact(FormAction):
 
         return []
 
-
 class ActionSelektor(Action):
     def name(self) -> Text:
 
