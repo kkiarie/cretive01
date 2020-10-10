@@ -54,8 +54,8 @@ responses:
   - text: "You can call CABY 🤓, how can i be of assistance today ?"
   - text: "Im smart personal assistant,here to assist you"
   utter_chitchat_pricing:
-  - text: We offers Flexible plans,Based on your business needs we have created packages
-      to help you onboard the intelligent assistant
+  - text: "We offers Flexible plans,Based on your business needs we have created packages
+      to help you onboard the intelligent assistant"
   utter_chitchat_smart_assistant:
   - buttons:
     - payload: /request_contact
