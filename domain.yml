@@ -1,0 +1,91 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- chitchat_creativeorchards
+- chitchat_identity
+- deny
+- chitchat_pricing
+- chitchat_smart_assistant
+- positive
+- inform
+- thankyou
+- request_contact
+- demo_1
+entities:
+- number
+- email
+- time
+- phone-number
+- PERSON
+slots:
+  PERSON:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  number:
+    type: unfeaturized
+  phone-number:
+    type: unfeaturized
+  time:
+    type: unfeaturized
+responses:
+  utter_greet:
+  - text: 👋 Good day! how are you ?
+  - text: Hello! 👋 how are you today ?
+  - text: Greeting! 👋 how is your day so far ?
+  utter_chitchat_creativeorchards:
+  - text: "We create smart personal assistant for businesses; this create an exciting\
+      \ & unique brand experiences that drive operational efficiencies with our intelligent\
+      \ assistance.\nThe smart personal assistant is able to:\n\U0001F449End to end\
+      \ customer lifecycle:-Step by step walk through with lead generation, customer\
+      \ care, conversion and after sales management\n\U0001F449Platform agnostic &\
+      \ future proof:-Develop Once, Connect Anywhere: Telegram, slack, Messenger,\
+      \ WeChat, Facebook, Viber, Web Chat, In-App\U0001F449\nAnalytics:-Ability to\
+      \ get key insights on your business and drive business goals based on data\n\
+      \U0001F4493rd party integration:-Integration with already existing business\
+      \ core systems such us ERP, M-PESA, SMS, PESAPAL, Email, calendar\n\U0001F449\
+      Artificial Intelligent:-Conversational assistant that assists in resolving complex\
+      \ customer queries"
+  utter_chitchat_identity:
+  - text: You can call CABY 🤓, how can i be of assistance today ?
+  - text: Im smart personal assistant,here to assist you
+  utter_chitchat_pricing:
+  - text: We offers Flexible plans,Based on your business needs we have created packages
+      to help you onboard the intelligent assistant
+  utter_chitchat_smart_assistant:
+  - buttons:
+    - payload: /request_contact
+      title: Contact Us
+    text: At Creative Orchards,We work with your business requirements to deliver
+      a smart personal assistant that will creates exciting & unique brand experience
+      for your customers and always keep them engaged as you focus on other things
+      about your business
+  utter_positive:
+  - text: Great! how can be of assistance to you today?
+  - text: Great! how can i help you today?
+  utter_ask_email:
+  - text: Please provide an email address that we can contact you?
+  utter_ask_time:
+  - text: Enter time ?
+  utter_ask_phone-number:
+  - text: Please provide a phone number that we can reach you?
+  utter_ask_PERSON:
+  - text: Pleas provide your name ?
+  utter_slot_values:
+  - text: "You have provide the following details\nEmails:{email}\nPhone Number:{phone-number}\n\
+      Name: {PERSON}"
+  utter_noworries:
+  - text: Thank you for submiting your data, we shall reach out to you soon!
+actions:
+- utter_ask_email
+- utter_ask_time
+- utter_ask_phone-number
+- utter_slot_values
+- utter_ask_PERSON
+- action_selektor
+forms:
+- form_contact
