@@ -69,3 +69,4 @@
 - show demo
 - demo
 - live demo
+- bot demo
