@@ -51,8 +51,8 @@ responses:
       Artificial Intelligent:-Conversational assistant that assists in resolving complex\
       \ customer queries"
   utter_chitchat_identity:
-  - text: You can call CABY 🤓, how can i be of assistance today ?
-  - text: Im smart personal assistant,here to assist you
+  - text: "You can call CABY 🤓, how can i be of assistance today ?"
+  - text: "Im smart personal assistant,here to assist you"
   utter_chitchat_pricing:
   - text: We offers Flexible plans,Based on your business needs we have created packages
       to help you onboard the intelligent assistant
